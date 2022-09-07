@@ -16,7 +16,7 @@ public class RockSpawner : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(5);
-            Instantiate(rock, transform.position, transform.rotation);
+            Instantiate(rock, new Vector3 (-2.5f + 5 * Random.value, 7, 0), Quaternion.identity);
         }
     }
     
